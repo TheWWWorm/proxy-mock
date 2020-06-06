@@ -3,6 +3,12 @@ A mock that can be used for anything
 
 Recursively creates properties on demand(they are created as new copy of proxy-mock), can be called as function, supports toPrimitive and iterator methods.
 
+## Install
+
+```
+$ npm install proxy-mock-js
+```
+
 ## Use
 
 ```js
