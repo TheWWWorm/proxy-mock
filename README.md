@@ -27,7 +27,7 @@ const spyFn = (name, fn) => {
 }
 const mock = getProxyMock({}, 'httpClient', spyFn);
 mock.post('/api/call');
-expect(mock).toHaveBeenCalled();
+expect(mock.post).toHaveBeenCalled();
 ```
 spyFn will be called each time new proxy is created and target will get neatly wrapped by the spy
 
