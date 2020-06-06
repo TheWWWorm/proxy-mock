@@ -1,6 +1,6 @@
 {
-  "name": "proxy_mock",
-  "version": "1.0.0",
+  "name": "proxy-mock-js",
+  "version": "1.0.1",
   "description": "A mock that can be used for anything",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheWWWorm/proxy-mock.git"
-  },  
+  },
   "keywords": [
     "proxy",
     "mock",
