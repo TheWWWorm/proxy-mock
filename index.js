@@ -21,7 +21,7 @@ const getProxyMock = (specifics = {}, name = 'proxyMock', wrap) => {
         return '1337';
     }
     target[Symbol.iterator] = function*() {
-        yield getProxyMock({}, `${name}.${key}`, wrap);
+        yield getProxyMock({}, `${name}.Symbol(Symbol.iterator)`, wrap);
     }
 
     return new Proxy(target, {
