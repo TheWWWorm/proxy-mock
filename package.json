@@ -1,8 +1,8 @@
 {
   "name": "proxy-mock-js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A mock that can be used for anything",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "ts-node index.ts"
   },
@@ -19,5 +19,6 @@
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.2"
-  }
+  },
+  "type": "module"
 }
