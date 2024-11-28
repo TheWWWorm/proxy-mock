@@ -55,7 +55,7 @@ export function getProxyMock<T extends {}>(
     getOwnPropertyDescriptor(obj, key) {
       let descriptor = Reflect.getOwnPropertyDescriptor(obj, key);
 
-      if (descriptor) {
+      if (!descriptor) {
         descriptor = {
           value: this.get && this.get(obj, key, getProxyMock({}, key.toString())),
           enumerable: true,
